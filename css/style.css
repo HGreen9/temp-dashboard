@@ -1,7 +1,10 @@
+/* Instal Open props */
+/* https://open-props.style/ */
+
 /* Diagnostic Styling */
-* {
+/* * {
   outline: 2px dotted gray;
-} 
+}  */
 
 
 /* temp background color */
@@ -9,3 +12,63 @@ body {
     background: peachpuff;
   }
   
+
+  /* Bento Box 0 Template
+
+https://codepen.io/manikoth/pen/raBPRNo.js
+*/
+
+/* more stuff */
+.bento-container {
+  grid-template-columns: repeat(4, 1fr);
+
+  /* optional. fixed aspect ratio   */
+  aspect-ratio: 16/9;
+}
+
+.feature-1 {
+	grid-column: span 1;
+  grid-row: span 2;
+}
+
+.feature-2 {
+	grid-column: span 3;
+  grid-row: span 1;
+}
+
+/* bigger section */
+.feature-3 {
+	grid-column: span 1;
+}
+
+.feature-4 {
+	grid-column: span 2;
+}
+
+.feature-5 {
+	grid-column: span 2;
+  grid-row: span 2;
+}
+
+.feature-6 {
+  grid-row: span 2;
+}
+
+.feature-7 {
+  grid-row: span 2;
+}
+
+/* Aspect Ratio */
+/* Responsive "tablet" size */
+@media (max-width: 768px) {
+/*   
+  body {
+    background: yellow;
+  } */
+  
+  /* more stuff */
+  .bento-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+}
