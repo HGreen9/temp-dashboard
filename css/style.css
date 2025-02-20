@@ -1,5 +1,5 @@
 /* Instal Open props */
-@import "https://open-props.style/";
+@import "https://unpkg.com/open-props";
 
 /* Diagnostic Styling */
 /* * {
@@ -9,8 +9,12 @@
 
 /* temp background color */
 body {
-    background: peachpuff;
+  background: var( --gradient-15)
   }
+/* 
+section{
+    animation: var(--animation-fade-in) 1s;
+  } */
   
 
   /* Bento Box 0 Template
@@ -21,6 +25,7 @@ https://codepen.io/manikoth/pen/raBPRNo.js
 /* more stuff */
 .bento-container {
   grid-template-columns: repeat(4, 1fr);
+  background-color: var(--pink-3);
 
   /* optional. fixed aspect ratio   */
   aspect-ratio: 16/9;
